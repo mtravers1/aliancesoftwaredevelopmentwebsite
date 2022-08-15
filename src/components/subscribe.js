@@ -4,10 +4,11 @@ class Subscribe extends Component{
     render(){
         return(
             
-                
-                <form>
-                    <input type="text"><button>Subscribe</button></input>
-                </form>
+            <div id="sub">
+            <span >subscribe to the know</span>
+            <input type="text" alt="enter you email"></input>
+          </div>
+          
           
         )
     }

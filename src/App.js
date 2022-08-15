@@ -1,22 +1,40 @@
 import Navbar from './components/navbar';
 import './App.css';
 import Button from './components/button'
-// import Subscribe from'./components/subscribe'
+import Subscribe from'./components/subscribe'
+import Boxes from './components/boxes'
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      
       <div class="verticalLine">
 
+
+      
       <div id="home">
-      <h1>Alliance Software development</h1>
-      <p>We design and build the future of tech, retail and commerce</p>
+        <div>
+      <p id="title">Alliance Software development</p>
+      <h1 id="text">We design and build the <br/>future of tech, retail and<br/> commerce</h1>
       <Button/>
-      {/* <Subscribe/> */}
+      <Boxes/>
+      </div>
+      <div id="photo">
+
       </div>
       </div>
-    </div>
+
+
+      
+
+      
+      
+      </div>
+      <Subscribe/>
+      </div>
+       
+  
   );
 }
 
