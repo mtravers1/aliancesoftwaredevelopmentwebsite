@@ -1,28 +1,40 @@
 import React, {Component} from "react";
 
+
+
+
 class Navbar extends Component{
     render(){
+        
+        
         return(
+
             <div id="navbar">
+                
                 <ul>
-                    <img scr=""></img>
+                    
                     <li>
-                        <a href="">About</a>
+                    
+                        <a href="/home"><img scr="" alt="asd"></img></a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about">About</a>
                     </li>
                     <li>
-                    <a href="">Services</a>
+                    <a href="/services">Services</a>
                     </li>
                     <li>
-                    <a href="">Portfolio</a>
+                    <a href="/portfolio">Portfolio</a>
                     </li>
                     <li>
-                    <a href="">Team</a>
+                    <a href="/teams">Team</a>
                     </li>
                     <li>
-                    <a href="">Contact</a>
+                    <a href="./contact">Contact</a>
                     </li>
-
-
+                    
+                    
                 </ul>
             </div>
         )

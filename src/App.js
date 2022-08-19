@@ -1,18 +1,42 @@
 import Navbar from './components/navbar';
 import './App.css';
-import Button from './components/button'
-import Subscribe from'./components/subscribe'
-import Boxes from './components/boxes'
-
+import Boxes from './components/boxes';
+import Button from './components/button';
+import About from "./pages/about";
+import Teams from "./pages/teams";
+import Contact from "./pages/contact";
+import Portfolio from "./pages/portfolio";
+import Home from './pages/home';
+import Subscribe from './components/subscribe';
 function App() {
+  
+  let component
+  switch(window.location.pathname){
+      case "/home":
+          component=<Home/>
+          break;
+      case"/about":
+          component=<About/>
+          break;
+      case"/contact":
+          component=<Contact/>
+          break;
+      case"/teams":
+          component=<Teams/>
+          break;
+      case"/portfolio":
+          component=<Portfolio/>
+          break;
+      
+      default:
+  }
   return (
     <div className="App">
-      <Navbar/>
       
+      <Navbar/>
+      {component}
       <div class="verticalLine">
 
-
-      
       <div id="home">
         <div>
       <p id="title">Alliance Software development</p>
@@ -25,16 +49,12 @@ function App() {
       </div>
       </div>
 
-
-      
-
-      
-      
       </div>
-      <Subscribe/>
+ 
+  <Subscribe/>
       </div>
        
-  
+   
   );
 }
 
