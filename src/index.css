@@ -1,31 +1,45 @@
 p{
   color: black;
 }
+#logo{
+  background: url('./assets/pic.jpeg');
+  height: 40px;
+  width: 50px
+}
 #navbar {
   overflow: auto;
   list-style: none;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:gray
+
 }
 
 #navbar ul{
   list-style: none;
   float:left;
+  padding-left:4px;
+ 
   
 }
 
 #navbar li{
-  text-decoration: none;
+  
   float:right;
-  list-style: none;
+  color: gray;
+  
+  
 }
 
-#navbar li:hover{
+#navbar a:hover{
   color:black;
 }
 
 #navbar a{
   padding:20px;
   text-align: center;
-  
+  text-decoration: none;
+  color: gray;
 }
 
 #photo{
@@ -34,7 +48,7 @@ p{
   background: url('./assets/pic.jpeg');
 }
 #home{
-  padding-top: 80px;
+  padding-top: 50px;
   text-align: left;
   display: grid;
   grid-template-columns: 650px 600px;
@@ -43,25 +57,27 @@ p{
 
 #title{
   font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #text{
-  font-size: 36px;
+  font-size: 48px;
 
 }
 #explorebutton{
   background-color: orange;
   color:white;
-  size: 100px;
-  height:50px;
-  width:200px;
+  font-size: 18px;
+  height:65px;
+  width:250px;
   border: none;
 
 }
 
 .verticalLine {
-  border-left: thin solid #ff0000;
+  border-left: thin solid grey;
   padding:20px;
+  margin-left: 30px;
 }
 
 
@@ -78,7 +94,7 @@ p{
 
 #sub{
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 600px 600px;
   font-size: 50px;
 }
 
@@ -95,7 +111,16 @@ p{
   display:grid;
   grid-template-columns: 200px 200px 200px;
   height: 400px;
+
   
+}
+
+#boxes p{
+  font-size: 11px;
+}
+
+#boxes h3{
+  font-size: 18px;
 }
 
 #web{
@@ -168,10 +193,28 @@ p{
 #thisway{
 
   float:left;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color:white;
+  background-color: black;
+  height: 50px;
+  width: 100px;
+  
+
 }
 
 #seemore{
   float:right;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color:white;
+  background-color: black;
+  height: 50px;
+  width: 100px;
+}
+
+.porpic{
+  
 }
 
 .leftrightport{
@@ -182,4 +225,17 @@ p{
   display:grid;
   grid-template-columns: 200px 200px 200px 200px;
   grid-template-rows: 200px 200px;
+}
+
+
+#services{
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: 100px 100px 100px 100px;
+  float:left;
+}
+
+.aboutpage{
+  font-size: 28px;
+  text-align: left;
 }

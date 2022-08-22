@@ -1,5 +1,6 @@
 export default function About(){
     return(
+        <div className="aboutpage">
         <p>Alliance Software Development Corp also known as ASD was formed based on the collective vision of Glen "Stickman",
             Vampbell, "QuikV" Campbell, Amie Lawson, and Amen Moja Ra.
             <br/>
@@ -20,5 +21,6 @@ export default function About(){
             ASK is cutting edge and is being established for the long term.
             With all star team and great ideas and people we poised to make our mark in of the history of the world.
         </p>
+        </div>
     )
 }

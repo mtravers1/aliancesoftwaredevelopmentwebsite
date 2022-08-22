@@ -3,9 +3,9 @@ export default function Portfolio(){
     <div >
         <h1>These are our creations.</h1>
         <span id="port">
-        <img scr="" alt="pic1"></img>
-        <img scr="" alt="pic1"></img>
-        <img scr="" alt="pic1"></img>
+        <img scr="./assets/pic.jpeg" class="porpic"></img>
+        <img scr="../assets/pic.jpeg" class="porpic"></img>
+        <img scr="./assets/pic.jpeg" class="porpic"></img>
         </span>
 
         <span class="leftrightport">

@@ -1,13 +1,19 @@
 import Navbar from './components/navbar';
 import './App.css';
-import Boxes from './components/boxes';
-import Button from './components/button';
+// import Boxes from './components/boxes';
+// import Button from './components/button';
 import About from "./pages/about";
 import Teams from "./pages/teams";
 import Contact from "./pages/contact";
 import Portfolio from "./pages/portfolio";
 import Home from './pages/home';
 import Subscribe from './components/subscribe';
+import Services from './pages/services';
+// import Customeracquisition from './servicepages.js/customeracqusition';
+// import Design from './servicepages.js/design';
+// import Development from './servicepages.js/development';
+// import Whitelabelapp from './servicepages.js/whitelabelapp';
+
 function App() {
   
   let component
@@ -27,17 +33,31 @@ function App() {
       case"/portfolio":
           component=<Portfolio/>
           break;
+      case"/services":
+        component=<Services/>
+          break;
+    //   case "../servicepages.js/customeracqusition":
+    //         component=<Customeracquisition/>
+    //         break;
+    //     case"/design":
+    //         component=<Design/>
+    //         break;
+    //     case"/development":
+    //         component=<Development/>
+    //         break;
+    //     case"/whitelabelapp":
+    //         component=<Whitelabelapp/>
+    //         break;
       
       default:
   }
   return (
     <div className="App">
-      
       <Navbar/>
-      {component}
+      
       <div class="verticalLine">
-
-      <div id="home">
+      {component}
+      {/* <div id="home">
         <div>
       <p id="title">Alliance Software development</p>
       <h1 id="text">We design and build the <br/>future of tech, retail and<br/> commerce</h1>
@@ -47,7 +67,7 @@ function App() {
       <div id="photo">
 
       </div>
-      </div>
+      </div> */}
 
       </div>
  

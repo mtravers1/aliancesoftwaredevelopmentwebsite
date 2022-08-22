@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../components/navbar';
+// import Navbar from '../components/navbar';
 import '../App.css';
 import Button from '../components/button'
-import Subscribe from'../components/subscribe'
+// import Subscribe from'../components/subscribe'
 import Boxes from '../components/boxes'
 
 
@@ -11,9 +11,9 @@ export default function Home() {
 
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
      
-      <div class="verticalLine">
+      {/* <div class="verticalLine"> */}
 
 
       
@@ -34,9 +34,9 @@ export default function Home() {
 
       
       
-      </div>
-      <Subscribe/>
-      </div>
+      {/* // </div> */}
+      {/* // <Subscribe/> */}
+      // </div>
        
   
   );
