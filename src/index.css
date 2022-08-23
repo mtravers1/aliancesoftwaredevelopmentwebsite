@@ -188,6 +188,8 @@ p{
 #port{
   display:grid;
   grid-template-columns: 400px 400px 400px;
+
+  padding:75px;
 }
 
 #thisway{
@@ -214,28 +216,61 @@ p{
 }
 
 .porpic{
-  
+  background-color: black;
+  background-image: url(http://localhost:3000/static/media/pic.0f2e153….jpeg);
+  width: 250px;
+  height: 250px;
+  padding: 50px;
 }
 
 .leftrightport{
   padding:20px
 }
 
+.teampic{
+  background-color: black;
+  background-image: url("./assets/pic.jpeg");
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 #teams{
   display:grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  
 }
 
 
 #services{
   display: grid;
-  grid-template-columns: 400px;
-  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 600px 600px;
+  text-decoration: none;
+  list-style: none;
+}
+#services li{
+  text-decoration: none;
+  padding:34px;
+  text-align: left;
+}
+#servicelist{
   float:left;
+  
 }
 
+#services button{
+  background: none;
+  font-size: 40px;
+  border: none;
+}
+
+#services p{
+  text-align: left;
+  font-size: 30px;
+}
 .aboutpage{
   font-size: 28px;
   text-align: left;
 }
+
