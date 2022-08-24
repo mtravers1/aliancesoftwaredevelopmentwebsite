@@ -1,10 +1,10 @@
-import Services from "../pages/services"
+
 import React from "react"
 
 export default function Development(){
     return(
         <div>
-        <Services/>
+        
         <h1>Development -</h1>
         <p>We can build anything. Our diverse team comes from a wide array
              of backgrounds
