@@ -1,3 +1,6 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
 p{
   color: black;
 }
@@ -53,16 +56,19 @@ p{
   display: grid;
   grid-template-columns: 650px 600px;
   padding-left: 30px;
+  
+
 }
 
 #title{
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  color: lightgrey;
+  
 }
 
 #text{
   font-size: 48px;
-
+  margin: 0px;
 }
 #explorebutton{
   background-color: orange;
@@ -110,7 +116,7 @@ p{
 #boxes{
   display:grid;
   grid-template-columns: 200px 200px 200px;
-  height: 400px;
+  height: 350px;
 
   
 }
@@ -128,7 +134,7 @@ p{
   margin-top:90px;
   padding-left:10px;
   width: 92%;
-  border-top: 2px solid red;
+  border-top: 3px solid red;
   color:red
 
 }
@@ -139,7 +145,7 @@ p{
   margin-top: 150px;
   padding-left:10px;
   width: 92%;
-  border-top: 2px solid blue;
+  border-top: 3px solid blue;
   color: blue;
 }
 
@@ -149,7 +155,7 @@ p{
   margin-top:50px;
   padding-left:10px;
   width: 92%;
-  border-top: 2px solid green;
+  border-top: 3px solid green;
   color: green;
 }
 
@@ -213,6 +219,7 @@ p{
   background-color: black;
   height: 50px;
   width: 100px;
+  
 }
 
 .porpic1{

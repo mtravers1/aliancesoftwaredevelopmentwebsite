@@ -3,19 +3,19 @@
 
 
 export default function Portfolio(){
-    const track=document.querySelector('span')
-    const slides=Array.from(track.children)
-    const leftbutton=document.getElementById("thisway")
-    const rightbutton=document.getElementById("seemore")
-    const slideWidth= slides[0].getBoundingClientRect().width;
+    // const track=document.querySelector('span')
+    // const slides=Array.from(track.children)
+    // const leftbutton=document.getElementById("thisway")
+    // const rightbutton=document.getElementById("seemore")
+    // const slideWidth= slides[0].getBoundingClientRect().width;
 
         //   slides.forEach((slide, index)=>{
         //   slides.style.left = slideWidth *index +'px'
         //  })
 
-      slides[0].style.left= slideWidth *0 +'px';
-      slides[1].style.left=slideWidth *1  + 'px'
-      slides[2].style.left=slideWidth*2 + 'px'
+    //   slides[0].style.left= slideWidth *0 +'px';
+    //   slides[1].style.left=slideWidth *1  + 'px'
+    //   slides[2].style.left=slideWidth*2 + 'px'
 
 
     //   const moveToSlide = (track, currentSlide, targetSlide) =>{
