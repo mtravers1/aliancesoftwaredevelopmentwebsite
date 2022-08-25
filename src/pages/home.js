@@ -36,7 +36,7 @@ export default function Home() {
       
       {/* // </div> */}
       {/* // <Subscribe/> */}
-      // </div>
+      </div>
        
   
   );
