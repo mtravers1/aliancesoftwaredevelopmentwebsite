@@ -47,7 +47,7 @@ export default function Portfolio(){
   
     return(
         
-    <div >
+    <div id="portfolio" >
 
         <h1>These are our creations.</h1>
         
