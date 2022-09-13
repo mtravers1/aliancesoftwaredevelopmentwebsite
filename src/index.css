@@ -288,3 +288,52 @@ p{
   text-align: left;
 }
 
+@media (max-width: 600px) {
+  #home{
+    display: grid;
+    grid-template-columns: 250px;
+  }
+  #navbar {
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+
+  #navbar a{
+    padding:10px;
+  }
+
+  .verticalLine {
+    border-left: thin solid grey;
+    padding:10px;
+    margin-left: 10px;
+  }
+
+
+  #sub{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  font-size: 20px;
+  }
+ 
+  #subinput{
+    height: 24px;
+    box-sizing: 50px;
+    float:center;
+    width: 200px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  .subbutton{
+    float:center;
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+}
