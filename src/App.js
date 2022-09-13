@@ -13,30 +13,31 @@ import Services from './pages/services';
 // import Design from './servicepages.js/design';
 // import Development from './servicepages.js/development';
 // import Whitelabelapp from './servicepages.js/whitelabelapp';
+import { BrowserRouter as Router, Routes, Link, Route} from 'react-router-dom'
 
 function App() {
   
-  let component
-  switch(window.location.pathname){
-      case "/home":
-      case "/":
-          component=<Home/>
-          break;
-      case"/about":
-          component=<About/>
-          break;
-      case"/contact":
-          component=<Contact/>
-          break;
-      case"/teams":
-          component=<Teams/>
-          break;
-      case"/portfolio":
-          component=<Portfolio/>
-          break;
-      case"/services":
-        component=<Services/>
-          break;
+  // let component
+  // switch(window.location.pathname){
+  //     case "/home":
+  //     case "/":
+  //         component=<Home/>
+  //         break;
+  //     case"/about":
+  //         component=<About/>
+  //         break;
+  //     case"/contact":
+  //         component=<Contact/>
+  //         break;
+  //     case"/teams":
+  //         component=<Teams/>
+  //         break;
+  //     case"/portfolio":
+  //         component=<Portfolio/>
+  //         break;
+  //     case"/services":
+  //       component=<Services/>
+  //         break;
     //   case "../servicepages.js/customeracqusition":
     //         component=<Customeracquisition/>
     //         break;
@@ -50,32 +51,30 @@ function App() {
     //         component=<Whitelabelapp/>
     //         break;
       
-      default:
-  }
+  //    default:
+  // }
   return (
-    <div className="App">
-      <Navbar/>
+    <Router>
+    {/* <div className="App"> */}
       
-      <div class="verticalLine">
-      {component}
-      {/* <div id="home">
-        <div>
-      <p id="title">Alliance Software development</p>
-      <h1 id="text">We design and build the <br/>future of tech, retail and<br/> commerce</h1>
-      <Button/>
-      <Boxes/>
-      </div>
-      <div id="photo">
+    <Navbar/>
+    <div class="verticalLine">
+        <Routes>
+        
+          
+          <Route path='/' element={<Home/>}/>
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/portfolio' element={<Portfolio/>}/>
+          <Route path='/services' element={<Services/>}/>
+          <Route path='/teams' element={<Teams/>}/>
+          
+          {/* </div> */}
+        </Routes>
 
       </div>
-      </div> */}
-
-      </div>
- 
-  <Subscribe/>
-      </div>
-       
-   
+       <Subscribe/>
+      </Router>
   );
 }
 

@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import { BrowserRouter as Route, Router, Routes, Link} from 'react-router-dom'
 
 
 
@@ -15,7 +16,7 @@ class Navbar extends Component{
                 <ul>
                     
                     
-                <button type="image" id="logo"><a href="/home"></a></button>
+                <button type="image" id="logo"><Link to="/home"></Link></button>
                     
                     
                     
@@ -23,19 +24,21 @@ class Navbar extends Component{
                     
                     
                     <li>
-                    <a href="./contact">Contact</a>
+                    <Link to="/contact">Contact</Link>   
+                    
                     </li>
                     <li>
-                    <a href="/teams">Team</a>
+                    <Link to="/teams">Teams</Link>
                     </li>
                     <li>
-                    <a href="/portfolio">Portfolio</a>
+                    <Link to="/portfolio">Portfolio</Link>
+                    
                     </li>
                     <li>
-                    <a href="/services">Services</a>
+                    <Link to= "/services">Services</Link>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <Link to='/about'>About</Link>
                     </li>
                     
                 </ul>
