@@ -21,9 +21,6 @@ class Boxes extends Component{
                 <br/>
                 
 
-
-
-
                 </div>
                 <div id="app">
                     <br/>

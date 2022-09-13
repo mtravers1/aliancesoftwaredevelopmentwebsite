@@ -102,8 +102,9 @@ p{
 
 #sub{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   font-size: 50px;
+  text-align: center;
 }
 
 #subinput{
@@ -301,7 +302,7 @@ p{
   }
 
   #navbar a{
-    padding:10px;
+    padding:7px;
   }
 
   .verticalLine {
@@ -334,6 +335,80 @@ p{
     width: 80px;
     height: 30px;
     cursor: pointer;
+
+    
   }
+  #boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 1050px;
+  }
+
+  #app{
+  background-color: whitesmoke;
   
+  margin-top: 30px;
+  padding-left:10px;
+  width: 100%;
+  border-top: 3px solid blue;
+  color: blue;
+  }
+  .aboutpage{
+    font-size: 18px;
+  }
+
+  #services li{
+    display: grid;
+    grid-template-columns: 250px ;
+    text-decoration: none;
+    list-style: none;
+    
+    padding: 4px;
+    
+  }
+
+  #servicelist {
+    float: left;
+    display: grid;
+  }
+
+  #text {
+  font-size: 24px;
+  margin: 0px;
+  }
+
+  #web{
+    background-color:whitesmoke;
+    margin-top:30px;
+    padding-left:10px;
+    width: 100%;
+    border-top: 3px solid red;
+    color:red
+  
+  }
+  #dev{
+    background-color:whitesmoke;
+    margin-top:30px;
+    padding-left:10px;
+    width: 100%;
+    border-top: 3px solid green;
+    color: green;
+  }
+
+  #services {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 300px 300px;
+    text-decoration: none;
+    list-style: none;
+  }
+  #services p {
+    text-align: left;
+    font-size: 16px;
+  }
+  #services button {
+    background: none;
+    font-size: 16px;
+    border: none;
+}
 }

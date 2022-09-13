@@ -24,7 +24,7 @@ export default function Services(){
     return(
     
     
-        
+        <div>
         <ul id="services" >
 
            <span id="servicelist">
@@ -53,6 +53,7 @@ export default function Services(){
              an food delivery app or a rock selling site,
              we can get the job done<br/><a href="">click here to learn more</a></p> */}
         </ul>
+        </div>
 
        
 
