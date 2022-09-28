@@ -14,50 +14,17 @@ import Services from './pages/services';
 // import Development from './servicepages.js/development';
 // import Whitelabelapp from './servicepages.js/whitelabelapp';
 import { BrowserRouter as Router, Routes, Link, Route} from 'react-router-dom'
+import Togglebutton from './components/togglebutton';
 
 function App() {
   
-  // let component
-  // switch(window.location.pathname){
-  //     case "/home":
-  //     case "/":
-  //         component=<Home/>
-  //         break;
-  //     case"/about":
-  //         component=<About/>
-  //         break;
-  //     case"/contact":
-  //         component=<Contact/>
-  //         break;
-  //     case"/teams":
-  //         component=<Teams/>
-  //         break;
-  //     case"/portfolio":
-  //         component=<Portfolio/>
-  //         break;
-  //     case"/services":
-  //       component=<Services/>
-  //         break;
-    //   case "../servicepages.js/customeracqusition":
-    //         component=<Customeracquisition/>
-    //         break;
-    //     case"/design":
-    //         component=<Design/>
-    //         break;
-    //     case"/development":
-    //         component=<Development/>
-    //         break;
-    //     case"/whitelabelapp":
-    //         component=<Whitelabelapp/>
-    //         break;
-      
-  //    default:
-  // }
+ 
   return (
     <Router>
     {/* <div className="App"> */}
       
     <Navbar/>
+    <Togglebutton/>
     <div class="verticalLine">
         <Routes>
         
